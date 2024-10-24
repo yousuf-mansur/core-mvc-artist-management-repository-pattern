@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\bootstrap\\css\\site.css",
+      "PackagePath": "staticwebassets\\bootstrap\\css\\site.css"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\images\\0d36e3f6-8001-4561-8810-76d22b366ce0_Nusrat.jpeg",
+      "PackagePath": "staticwebassets\\images\\0d36e3f6-8001-4561-8810-76d22b366ce0_Nusrat.jpeg"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\images\\54b06d87-71c0-4686-9d43-8aacfdd89053_Sonia.jpg",
+      "PackagePath": "staticwebassets\\images\\54b06d87-71c0-4686-9d43-8aacfdd89053_Sonia.jpg"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\images\\6c7ecf87-7ce6-48c0-b80c-2d82fe068dc9_Monsur.jpg",
+      "PackagePath": "staticwebassets\\images\\6c7ecf87-7ce6-48c0-b80c-2d82fe068dc9_Monsur.jpg"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\images\\7bdb1bfd-a198-4330-b767-67ded6fc9902_Mamun.jpg",
+      "PackagePath": "staticwebassets\\images\\7bdb1bfd-a198-4330-b767-67ded6fc9902_Mamun.jpg"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\images\\noimage.png",
+      "PackagePath": "staticwebassets\\images\\noimage.png"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\IsDB-BISEW\\GitProject\\CoreWebApplication\\CoreWebApp\\wwwroot\\js\\customScript.js",
+      "PackagePath": "staticwebassets\\js\\customScript.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CoreWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CoreWebApp.props",
+      "PackagePath": "build\\CoreWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CoreWebApp.props",
+      "PackagePath": "buildMultiTargeting\\CoreWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CoreWebApp.props",
+      "PackagePath": "buildTransitive\\CoreWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

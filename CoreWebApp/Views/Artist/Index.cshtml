@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Artist>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    @foreach (var item in Model)
+    {
+        var photoPath = "~/images/" + (item.PicturePath ?? "noimage.png");
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@item.ArtistName</h5>
+                    <p>@item.Email</p>
+                    <img class="card-img-top imageThumpnail" src="@photoPath" asp-append-version="true" />
+
+                </div>
+                <div class="card-footer align-content-center">
+                    <a asp-controller="Artist" asp-action="Details" asp-route-id="@item.ArtistId" class="btn btn-primary">View</a>
+                    <a asp-controller="Artist" asp-action="Edit" asp-route-id="@item.ArtistId" class="btn btn-success">Edit</a>
+                    <a asp-controller="Artist" asp-action="Delete" asp-route-id="@item.ArtistId" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
+

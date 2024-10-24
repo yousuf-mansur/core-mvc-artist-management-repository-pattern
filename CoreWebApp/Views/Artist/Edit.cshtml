@@ -1,0 +1,65 @@
+﻿@model ArtistUpdateViewModel
+@{
+    var photoPath = "~/images/" + (Model.ExistingPicturepath ?? "noimage.png");
+}
+<div class="row">
+    <input hidden asp-for="Id" />
+    <input hidden asp-for="ExistingPicturepath" />
+    <div class="card align-content-center">
+        <div class="card-header">@ViewBag.Title</div>
+        <div class="card-body">
+            <form enctype="multipart/form-data" asp-controller="Artist" asp-action="Edit" method="post" class="mt-3">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Artist Name</label>
+                    <input asp-for="Name" class="form-control" placeholder="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" placeholder="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Medium" class="form-label">Medium</label>
+                    <select asp-for="Medium" class="form-select mb-2" asp-items="Html.GetEnumSelectList<Medium>()">
+                        <option value="">Please Select</option>
+                    </select>
+                    <span asp-validation-for="Medium" class="text-danger"></span>
+                </div>
+                <div class="mb-2">
+                    <label asp-for="Picture"></label>
+                    <div class="Custom-file">
+                        <input asp-for="Picture" type="file" class="form-control custom-file-input changeimage" onchange="readURL(this)" />
+                        <label class="custom-file-label">Choose file .....</label>
+                    </div>
+
+                </div>
+                <div class="mb-2">
+                    <img id="img" class="imageThumpnail change_edit" src="@photoPath" asp-append-version="true" />
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+<script src="~/jquery/jquery.min.js"></script>
+<script>
+    function readURL(input) {
+        var url = input.value;
+        var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+        if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#img').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+        else {
+            $('#img').attr('src', '/assets/no_preview.png');
+        }
+    }
+
+</script>
